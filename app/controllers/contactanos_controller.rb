@@ -1,0 +1,4 @@
+class ContactanosController < ApplicationController
+
+
+end
