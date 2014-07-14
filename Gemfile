@@ -36,6 +36,12 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
 gem 'rails_12factor', group: :production
+
+gem 'thin'
 
 ruby '1.9.3'

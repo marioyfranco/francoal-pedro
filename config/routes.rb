@@ -16,4 +16,11 @@ Francoal::Application.routes.draw do
     get 'index', :on => :collection
   end
 
+  resources :home do 
+    get 'index', :on => :collection
+  end
+
+  root :to => 'home#index'
+  
+
 end
