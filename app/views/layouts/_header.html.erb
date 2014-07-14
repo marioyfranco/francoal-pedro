@@ -1,0 +1,23 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<img class="span3 brand" src="/assets/francoal.png" style="position:relative; margin:25px;">
+		<div class="span9 pull-right">
+			<div class="row">
+				<div class="pull-right" style="padding:20px 15px;">
+					<span><a class="active" href="#" id="idiomas">Español</a></span>
+					<span>/</span>
+					<span><a href="#" id="idiomas">English</a></span>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="nav pull-right">
+					<li class="<%= 'active' if current_page?("/home") || current_page?("/") %>"><%= link_to "Inicio", "/home" %></li>
+					<li class="<%= 'active' if current_page?("/quienes_somos") %>"><%= link_to "Quiénes Somos", "/quienes_somos" %></li>
+					<li class="<%= 'active' if current_page?("/productos") %>"><%= link_to "Productos", "/productos" %></li>
+					<li class="<%= 'active' if current_page?("/contactanos") %>"><%= link_to "Contáctanos", "/contactanos" %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
