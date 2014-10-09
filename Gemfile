@@ -15,7 +15,7 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-
+  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -38,10 +38,9 @@ gem 'jquery-rails'
 
 gem 'therubyracer'
 gem 'less-rails'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 gem 'rails_12factor', group: :production
 
 gem 'thin'
 
-ruby '1.9.3'
+ruby '2.0.0'

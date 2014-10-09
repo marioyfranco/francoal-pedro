@@ -1,21 +1,42 @@
 <div class="navbar">
 	<div class="navbar-inner">
-		<img class="span3 brand" src="/assets/francoal.png" style="position:relative; margin:25px;">
+		<img class="span3 brand" src="/assets/francoal.png" style="position:relative;">
 		<div class="span9 pull-right">
 			<div class="row">
-				<div class="pull-right" style="padding:20px 15px;">
+				<div class="pull-right" style="padding:5px 15px;">
 					<span><a class="active" href="#" id="idiomas">Español</a></span>
 					<span>/</span>
 					<span><a href="#" id="idiomas">English</a></span>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" style="padding:5px;">
 				<ul class="nav pull-right">
 					<li class="<%= 'active' if current_page?("/home") || current_page?("/") %>"><%= link_to "Inicio", "/home" %></li>
-					<li class="<%= 'active' if current_page?("/quienes_somos") %>"><%= link_to "Quiénes Somos", "/quienes_somos" %></li>
+					<li class="dropdown">
+			            <a href="/quienes_somos" class="dropdown-toggle <%= 'active' if current_page?("/quienes_somos") %>" data-toggle="dropdown">Quiénes Somos<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+			                <li><a href="/quienes_somos/la_empresa">La empresa</a></li>
+			                <li><a href="/quienes_somos/historia">Historia</a></li>
+			                <li><a href="/quienes_somos/infraestructura">Infraestructura</a></li>
+			                <li><a href="/quienes_somos/donde_estamos">Dónde estamos</a></li>
+			            </ul>
+					</li>
 					<li class="<%= 'active' if current_page?("/productos") %>"><%= link_to "Productos", "/productos" %></li>
 					<li class="<%= 'active' if current_page?("/contactanos") %>"><%= link_to "Contáctanos", "/contactanos" %></li>
 				</ul>
+				<ul class="nav">
+		            <li class="dropdown active">
+		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mi equipo <b class="caret"></b></a>
+		              <ul class="dropdown-menu">
+		                <li><a href="#">Alineación</a></li>
+		                <li><a href="#"> Histórico </a></li>
+		              </ul>
+		            </li>
+		            <li><a href="#">Clasificación</a></li>
+		            <li><a href="#">Foro</a></li>
+		            <li><a href="#">Premios</a></li>
+		            <li><a href="#">Reglas</a></li>
+		        </ul> 
 			</div>
 		</div>
 	</div>
